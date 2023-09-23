@@ -1,4 +1,29 @@
 .main{
-    display: flex;
+    font-size: 14px;
+    width: 100%;
+    padding: 20px 0;
 
+    .nonSolved{
+        display: flex;
+        .img{
+            margin-right: 20px;
+        }
+    
+        .description{
+            input{
+                margin-bottom: 10px;
+            }
+            button{
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .solvedChar{
+        width: 40px;
+        margin: 0 auto;
+        font-size: 36px;
+    }    
 }

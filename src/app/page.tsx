@@ -19,7 +19,9 @@ export default function Home() {
         />
         {
           !openDex &&
-          (<button onClick={clickOpenDex}>
+          (<button
+            className={styles.openPokedex}
+            onClick={clickOpenDex}>
           Open Pokedex
           </button>)
         }
