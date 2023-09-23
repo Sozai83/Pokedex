@@ -1,6 +1,7 @@
 "use client"
 import Image from 'next/image'
 import styles from './page.module.scss'
+import { PokedexMain } from './components/PokedexMain'
 import { useState } from 'react'
 
 export default function Home() {
@@ -16,9 +17,16 @@ export default function Home() {
           alt="pokedex top"
           className={styles.pokedexTop}
         />
-        <button onClick={clickOpenDex}>
+        {
+          !openDex &&
+          (<button onClick={clickOpenDex}>
           Open Pokedex
-        </button>
+          </button>)
+        }
+        {
+          openDex &&
+          <PokedexMain />
+        }
       </section>
     </main>
   )
