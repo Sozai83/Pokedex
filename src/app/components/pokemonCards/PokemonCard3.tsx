@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from './PokemonCards.module.scss'
 import { useState } from 'react'
+import { Clue } from '../clue/Clue';
 
 export function PokedexCard3() {
     const [openClue, setOpenClue] = useState(false);
@@ -26,6 +27,7 @@ export function PokedexCard3() {
         }
     }
     return (
+        <>
         <main className={styles.main}>
             {!solved &&
                 (
@@ -39,7 +41,9 @@ export function PokedexCard3() {
                             />
                         </section>
                     <section className={styles.description}>
-                        <button className={styles.clue}>See clue</button>
+                            <button className={styles.clue} onClick={changeSetOpenClue}>
+                                See clue
+                            </button>
                         <form onSubmit={submitKeyword}>
                             <label>Password</label>
                             {warning && (<p>{warning}</p>)}
@@ -61,5 +65,11 @@ export function PokedexCard3() {
                 </section>
             )}
         </main >
+
+            {
+                openClue &&
+                <Clue className={styles.clueDesc} clue="clue3" setOpenClue={setOpenClue} />
+            }
+        </>
     )
 }

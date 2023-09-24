@@ -1,13 +1,3 @@
-.main{
-
-    .description{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 10px;
-        background: white;
-    }
-}
-
 .clueDesc{
     position:absolute;
     top: -140px;;
@@ -18,9 +8,15 @@
 
     .description{
         width: 80%;
+        min-height: 400px;
         margin: 40px auto;
         padding: 10px;
         background: white;
+
+        p{
+            margin: 100px auto;
+            text-align: center;
+        }
 
         figure{
             width: 100%;

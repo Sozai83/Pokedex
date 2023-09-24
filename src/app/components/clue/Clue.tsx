@@ -27,8 +27,6 @@ export function Clue(props: any) {
                             alt="pokedex top"
                         />
                     </figure>
-
-
                     <button onClick={closeClue}>Close Clue</button>
                 </section>
             )}
@@ -38,6 +36,8 @@ export function Clue(props: any) {
             )}
             {clue == 'clue3' && (
                 <section className={styles.description}>
+                    <p>Check behind our goals</p>
+                    <button onClick={closeClue}>Close Clue</button>
                 </section>
             )}
         </main>
