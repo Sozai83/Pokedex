@@ -35,8 +35,8 @@ export function PokedexCard2() {
                         <section className={styles.img}>
                             <Image
                                 src="/Vaporeon_Silhouette.jpg"
-                                width={100}
-                                height={100}
+                                width={80}
+                                height={80}
                                 alt="pokedex top"
                             />
                         </section>
@@ -49,7 +49,8 @@ export function PokedexCard2() {
                             {warning && (<p className={styles.warning}>{warning}</p>)}
                             <input
                                 onChange={changeKeyword}
-                                type="text" />
+                                    type="text"
+                                    className={styles.textInput} />
                             <input
                                 type="submit"
                                 value="check password" />
