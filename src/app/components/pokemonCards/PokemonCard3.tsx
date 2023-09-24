@@ -19,7 +19,7 @@ export function PokedexCard3() {
     const submitKeyword = (e: any) => {
         e.preventDefault();
         const temp_key = keyword.toLowerCase().trim();
-        if (temp_key === "test") {
+        if (temp_key === "birthday") {
             setWarning("")
             setSoved(true);
         } else {
