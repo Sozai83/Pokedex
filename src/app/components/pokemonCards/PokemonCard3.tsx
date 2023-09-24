@@ -46,7 +46,7 @@ export function PokedexCard3() {
                             </button>
                         <form onSubmit={submitKeyword}>
                             <label>Password</label>
-                            {warning && (<p>{warning}</p>)}
+                                {warning && (<p className={styles.warning}>{warning}</p>)}
                             <input
                                 onChange={changeKeyword}
                                 type="text" />

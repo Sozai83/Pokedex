@@ -42,7 +42,7 @@ export function PokedexCard2() {
                         <button className={styles.clue}>See clue</button>
                         <form onSubmit={submitKeyword}>
                             <label>Password</label>
-                            {warning && (<p>{warning}</p>)}
+                            {warning && (<p className={styles.warning}>{warning}</p>)}
                             <input
                                 onChange={changeKeyword}
                                 type="text" />
