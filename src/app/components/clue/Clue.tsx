@@ -32,6 +32,29 @@ export function Clue(props: any) {
             )}
             {clue == 'clue2' && (
                 <section className={styles.description}>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Key</td>
+                                <td>Number</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Eco</td>
+                                <td>2.46</td>
+                            </tr>
+                            <tr>
+                                <td>Intensive</td>
+                                <td>2.50</td>
+                            </tr>
+                            <tr>
+                                <td>Gentle</td>
+                                <td>0.38</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button onClick={closeClue}>Close Clue</button>
                 </section>
             )}
             {clue == 'clue3' && (

@@ -29,6 +29,17 @@
 
         }
 
+        table, th, td{
+            margin: 60px auto;
+            border: black 1px solid;
+            border-collapse: collapse;
+
+            td{
+                padding: 5px;
+                
+            }
+        }
+
         button{
             margin: 0 auto;
             display: block;
