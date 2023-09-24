@@ -18,7 +18,8 @@ export function PokedexCard1() {
     }
     const submitKeyword = (e: any) => {
         e.preventDefault();
-        if (keyword === "test") {
+        const temp_key = keyword.toLowerCase().trim();
+        if (temp_key === "test") {
             setWarning("")
             setSoved(true);
         } else {
