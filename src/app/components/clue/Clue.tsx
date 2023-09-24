@@ -21,7 +21,7 @@ export function Clue(props: any) {
                     <figure>
                         <figcaption>Clue 2</figcaption>
                         <Image
-                            src="/Clue1_2.jpg"
+                            src="/clue1_2.jpg"
                             width={240}
                             height={240}
                             alt="pokedex top"
