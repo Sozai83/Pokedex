@@ -1,0 +1,45 @@
+.main{
+
+    .description{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        background: white;
+    }
+}
+
+.clueDesc{
+    position:absolute;
+    top: -140px;;
+    left: -60px;
+    width: 100vw;
+    height:100vh;
+    background: rgb(0,0,0,0.9);
+
+    .description{
+        width: 80%;
+        margin: 40px auto;
+        padding: 10px;
+        background: white;
+
+        figure{
+            width: 100%;
+            text-align: center;
+
+            img{
+                display: block;
+                margin: 20px auto;
+            }
+
+        }
+
+        button{
+            margin: 0 auto;
+            display: block;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+
+    }
+}
