@@ -13,7 +13,7 @@ export default function Home() {
         <Image
           src="/pokedex_top.jpg"
           width={400}
-          height={700}
+          height={600}
           alt="pokedex top"
           className={styles.pokedexTop}
         />
